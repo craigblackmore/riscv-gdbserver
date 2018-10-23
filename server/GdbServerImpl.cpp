@@ -734,7 +734,12 @@ GdbServerImpl::rspReadMem ()
 	  pkt->data[off * 2 + 1] = Utils::hex2Char(ch &  0xf);
 	}
       else
-	cerr << "Warning: failed to read char" << endl;
+        {
+          // cerr << "Warning: failed to read char" << endl;
+          pkt->packStr ("E01");
+          rsp->putPkt (pkt);
+          return;
+        }
     }
 
   pkt->data[off * 2] = '\0';			// End of string

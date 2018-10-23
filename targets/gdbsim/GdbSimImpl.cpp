@@ -260,8 +260,8 @@ GdbSimImpl::read (const uint32_t addr __attribute__ ((unused)),
     = sim_read (gdbsim_desc, addr, buffer, size);
   if (ans == 0)
     {
-      std::cerr << "In " << __PRETTY_FUNCTION__ << " failed to read "
-                << "memory at " << std::hex << addr << std::endl;
+      //std::cerr << "In " << __PRETTY_FUNCTION__ << " failed to read "
+      //        << "memory at " << std::hex << addr << std::endl;
     }
   return ans;
 }	// GdbSimImpl::read ()
