@@ -30,7 +30,7 @@ libgdbsim_la_CPPFLAGS = -I$(srcdir)/..         \
                         -I$(srcdir)/../common  \
                         -I$(top_srcdir)/server \
                         -I$(top_srcdir)/trace  \
-                        -I$(top_srcdir)/../gdb/include \
+                        -I$(top_srcdir)/../binutils-gdb/include \
                         -I$(BINUTILS_INCDIR)
 
 libgdbsim_la_CXXFLAGS = -Werror -Wall -Wextra

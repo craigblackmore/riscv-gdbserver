@@ -131,7 +131,7 @@ AC_ARG_WITH(
        AC_HELP_STRING([--with-gdbsim-incdir],
 		      [include directory for gdbsim headers]),
        [GDBSIM_INCDIR="$(cd $withval; pwd)"],
-       [GDBSIM_INCDIR="$srcdir/../gdb/include"
+       [GDBSIM_INCDIR="$srcdir/../binutils-gdb/include"
 	 AS_IF([test -d $GDBSIM_INCDIR],
 	       [GDBSIM_INCDIR="$(cd $GDBSIM_INCDIR; pwd)"],
 	       [AC_MSG_FAILURE([Couldn't find gdbsim header files, use --with-gdbsim-incdir])])])

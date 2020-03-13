@@ -16081,7 +16081,7 @@ fi
 if test "${with_gdbsim_incdir+set}" = set; then :
   withval=$with_gdbsim_incdir; GDBSIM_INCDIR="$(cd $withval; pwd)"
 else
-  GDBSIM_INCDIR="$srcdir/../gdb/include"
+  GDBSIM_INCDIR="$srcdir/../binutils-gdb/include"
 	 if test -d $GDBSIM_INCDIR; then :
   GDBSIM_INCDIR="$(cd $GDBSIM_INCDIR; pwd)"
 else
