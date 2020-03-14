@@ -1,5 +1,11 @@
 2020-03-13  Andrew Burgess  <andrew.burgess@embecosm.com>
 
+	* targets/gdbsim/Makefile.am (libgdbsim_la_CPPFLAGS): Add
+	GDBSIM_INCDIR and MDIR_GDBSIM as include directories.
+	* targets/gdbsim/Makefile.in: Regenerated.
+
+2020-03-13  Andrew Burgess  <andrew.burgess@embecosm.com>
+
 	* configure.ac: Looking binutils-gdb directory for GDB header
 	files as a default.
 	* targets/gdbsim/Makefile.am: Likewise.
