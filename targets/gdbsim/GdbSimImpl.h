@@ -27,8 +27,8 @@
 #include <fstream>
 
 #include "ITarget.h"
-#include "gdb/remote-sim.h"
-#include "gdb/callback.h"
+#include "sim/sim.h"
+#include "sim/callback.h"
 
 //! The GDBSIM implementation class.
 
